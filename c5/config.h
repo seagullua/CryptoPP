@@ -1,6 +1,12 @@
 #ifndef CRYPTOPP_CONFIG_H
 #define CRYPTOPP_CONFIG_H
 
+#ifdef _MSC_VER
+#pragma warning ( disable : 4100 )
+#pragma warning ( disable : 4189 )
+#endif
+
+
 // ***************** Important Settings ********************
 
 // define this if running on a big-endian CPU
