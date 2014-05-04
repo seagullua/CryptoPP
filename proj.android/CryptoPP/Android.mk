@@ -131,7 +131,8 @@ LOCAL_SRC_FILES := ../../c5/zlib.cpp \
 #    ../../c5/network.cpp \
 #    ../../c5/socketft.cpp \
 
-LOCAL_CFLAGS := -DCRYPTOPP_DISABLE_ASM -DCRYPTOPP_DISABLE_SSE2
+LOCAL_CFLAGS := -DCRYPTOPP_DISABLE_ASM -DCRYPTOPP_DISABLE_SSE2 -fvisibility=hidden -fvisibility-inlines-hidden
+LOCAL_EXPORT_CFLAGS := -fvisibility=hidden -fvisibility-inlines-hidden
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../
 
